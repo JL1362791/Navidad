@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Navidad</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url("https://cdn.pixabay.com/photo/2017/10/26/19/45/red-2892235_1280.png") no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            overflow: hidden;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            color: #2a5298;
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 500px;
+            margin: 20px auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            color: #ff4b5c;
+        }
+        a {
+            color: #ff4b5c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .snowflakes {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        .snowflake {
+            position: absolute;
+            top: -10%;
+            animation: fall linear infinite;
+            color: white;
+            font-size: 1.5em;
+            opacity: 0.8;
+        }
+        .snowflake:nth-child(odd) {
+            animation-duration: 8s;
+            font-size: 2em;
+        }
+        .snowflake:nth-child(even) {
+            animation-duration: 10s;
+            font-size: 1.2em;
+        }
+        @keyframes fall {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                left: 0;
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+    </div>
+
+    <div class="card">
+        <h1>🎄 ¡Feliz Navidad! 🎄</h1>
+        <p>Familia Campos,</p>
+        <p>Les deseo mucho a todos por su linda amistad que tenemos en la familia. Que todos sus sueños y metas se cumplan en el próximo año.</p>
+        <p>Con todo mi cariño,</p>
+        <p><strong>Jorge Luis Guerrero Campos</strong></p>
+        <p>Visita mi página web aquí: <a href="file:///C:/Users/HP/Pictures/Tarjeta%20mejorado%20de%20navidad.html" target="_blank">www.jorge2112.com</a></p>
+        <p>Escucha un mensaje especial aquí: <a href="https://www.youtube.com" target="_blank">Audio en YouTube</a></p>
+    </div>
+</body>
+</html>
